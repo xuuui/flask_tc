@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="root@118.25.74.163:3500">
+    <serverData>
+      <paths name="root@118.25.74.163:3500">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/www/wwwroot/flask" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

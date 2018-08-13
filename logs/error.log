@@ -1,0 +1,457 @@
+[2018-08-08 21:32:20 +0800] [27029] [DEBUG] Current configuration:
+  config: gunicorn.py
+  bind: ['127.0.0.1:5000']
+  backlog: 2048
+  workers: 3
+  worker_class: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+  threads: 2
+  worker_connections: 1000
+  max_requests: 10000
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 5
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /www/wwwroot/flask
+  daemon: False
+  raw_env: []
+  pidfile: /www/wwwroot/flask/logs/gunicorn.pid
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: ./logs/acess.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: ./logs/error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: manage:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f41092c11e0>
+  on_reload: <function OnReload.on_reload at 0x7f41092c12f0>
+  when_ready: <function WhenReady.when_ready at 0x7f41092c1400>
+  pre_fork: <function Prefork.pre_fork at 0x7f41092c1510>
+  post_fork: <function Postfork.post_fork at 0x7f41092c1620>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f41092c1730>
+  worker_int: <function WorkerInt.worker_int at 0x7f41092c1840>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f41092c1950>
+  pre_exec: <function PreExec.pre_exec at 0x7f41092c1a60>
+  pre_request: <function PreRequest.pre_request at 0x7f41092c1b70>
+  post_request: <function PostRequest.post_request at 0x7f41092c1bf8>
+  child_exit: <function ChildExit.child_exit at 0x7f41092c1d08>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f41092c1e18>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f41092c1f28>
+  on_exit: <function OnExit.on_exit at 0x7f41092d40d0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2018-08-08 21:32:20 +0800] [27029] [INFO] Starting gunicorn 19.9.0
+[2018-08-08 21:32:20 +0800] [27029] [DEBUG] Arbiter booted
+[2018-08-08 21:32:20 +0800] [27029] [INFO] Listening at: http://127.0.0.1:5000 (27029)
+[2018-08-08 21:32:20 +0800] [27029] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2018-08-08 21:32:20 +0800] [27032] [INFO] Booting worker with pid: 27032
+[2018-08-08 21:32:20 +0800] [27033] [INFO] Booting worker with pid: 27033
+[2018-08-08 21:32:20 +0800] [27029] [DEBUG] 3 workers
+[2018-08-08 21:32:20 +0800] [27034] [INFO] Booting worker with pid: 27034
+[2018-08-08 21:32:32 +0800] [27029] [INFO] Handling signal: int
+[2018-08-08 21:32:32 +0800] [27032] [INFO] Worker exiting (pid: 27032)
+[2018-08-08 21:32:32 +0800] [27033] [INFO] Worker exiting (pid: 27033)
+[2018-08-08 21:32:32 +0800] [27034] [INFO] Worker exiting (pid: 27034)
+[2018-08-08 21:32:32 +0800] [27029] [INFO] Shutting down: Master
+[2018-08-08 21:39:42 +0800] [27393] [DEBUG] Current configuration:
+  config: gunicorn.py
+  bind: ['127.0.0.1:5000']
+  backlog: 2048
+  workers: 3
+  worker_class: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+  threads: 2
+  worker_connections: 1000
+  max_requests: 10000
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 5
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /www/wwwroot/flask
+  daemon: False
+  raw_env: []
+  pidfile: /www/wwwroot/flask/logs/gunicorn.pid
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: ./logs/acess.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(t)s %(U)s %(q)s
+  errorlog: ./logs/error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: manage:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f2a1e8741e0>
+  on_reload: <function OnReload.on_reload at 0x7f2a1e8742f0>
+  when_ready: <function WhenReady.when_ready at 0x7f2a1e874400>
+  pre_fork: <function Prefork.pre_fork at 0x7f2a1e874510>
+  post_fork: <function Postfork.post_fork at 0x7f2a1e874620>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2a1e874730>
+  worker_int: <function WorkerInt.worker_int at 0x7f2a1e874840>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2a1e874950>
+  pre_exec: <function PreExec.pre_exec at 0x7f2a1e874a60>
+  pre_request: <function PreRequest.pre_request at 0x7f2a1e874b70>
+  post_request: <function PostRequest.post_request at 0x7f2a1e874bf8>
+  child_exit: <function ChildExit.child_exit at 0x7f2a1e874d08>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2a1e874e18>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2a1e874f28>
+  on_exit: <function OnExit.on_exit at 0x7f2a1e8870d0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2018-08-08 21:39:42 +0800] [27393] [INFO] Starting gunicorn 19.9.0
+[2018-08-08 21:39:42 +0800] [27393] [DEBUG] Arbiter booted
+[2018-08-08 21:39:42 +0800] [27393] [INFO] Listening at: http://127.0.0.1:5000 (27393)
+[2018-08-08 21:39:42 +0800] [27393] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2018-08-08 21:39:42 +0800] [27396] [INFO] Booting worker with pid: 27396
+[2018-08-08 21:39:42 +0800] [27397] [INFO] Booting worker with pid: 27397
+[2018-08-08 21:39:42 +0800] [27398] [INFO] Booting worker with pid: 27398
+[2018-08-08 21:39:42 +0800] [27393] [DEBUG] 3 workers
+[2018-08-08 21:39:47 +0800] [27393] [INFO] Handling signal: int
+[2018-08-08 21:39:47 +0800] [27396] [INFO] Worker exiting (pid: 27396)
+[2018-08-08 21:39:47 +0800] [27397] [INFO] Worker exiting (pid: 27397)
+[2018-08-08 21:39:47 +0800] [27398] [INFO] Worker exiting (pid: 27398)
+[2018-08-08 21:39:47 +0800] [27393] [INFO] Shutting down: Master
+[2018-08-08 21:39:50 +0800] [27405] [DEBUG] Current configuration:
+  config: gunicorn.py
+  bind: ['127.0.0.1:5000']
+  backlog: 2048
+  workers: 3
+  worker_class: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+  threads: 2
+  worker_connections: 1000
+  max_requests: 10000
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 5
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /www/wwwroot/flask
+  daemon: False
+  raw_env: []
+  pidfile: /www/wwwroot/flask/logs/gunicorn.pid
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: ./logs/acess.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(t)s %(U)s %(q)s
+  errorlog: ./logs/error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: manage:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f9f835e81e0>
+  on_reload: <function OnReload.on_reload at 0x7f9f835e82f0>
+  when_ready: <function WhenReady.when_ready at 0x7f9f835e8400>
+  pre_fork: <function Prefork.pre_fork at 0x7f9f835e8510>
+  post_fork: <function Postfork.post_fork at 0x7f9f835e8620>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f9f835e8730>
+  worker_int: <function WorkerInt.worker_int at 0x7f9f835e8840>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f9f835e8950>
+  pre_exec: <function PreExec.pre_exec at 0x7f9f835e8a60>
+  pre_request: <function PreRequest.pre_request at 0x7f9f835e8b70>
+  post_request: <function PostRequest.post_request at 0x7f9f835e8bf8>
+  child_exit: <function ChildExit.child_exit at 0x7f9f835e8d08>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f9f835e8e18>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f9f835e8f28>
+  on_exit: <function OnExit.on_exit at 0x7f9f835fb0d0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2018-08-08 21:39:50 +0800] [27405] [INFO] Starting gunicorn 19.9.0
+[2018-08-08 21:39:50 +0800] [27405] [DEBUG] Arbiter booted
+[2018-08-08 21:39:50 +0800] [27405] [INFO] Listening at: http://127.0.0.1:5000 (27405)
+[2018-08-08 21:39:50 +0800] [27405] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2018-08-08 21:39:50 +0800] [27408] [INFO] Booting worker with pid: 27408
+[2018-08-08 21:39:50 +0800] [27409] [INFO] Booting worker with pid: 27409
+[2018-08-08 21:39:50 +0800] [27410] [INFO] Booting worker with pid: 27410
+[2018-08-08 21:39:50 +0800] [27405] [DEBUG] 3 workers
+[2018-08-08 21:39:51 +0800] [27405] [INFO] Handling signal: int
+[2018-08-08 21:39:51 +0800] [27408] [INFO] Worker exiting (pid: 27408)
+[2018-08-08 21:39:51 +0800] [27409] [INFO] Worker exiting (pid: 27409)
+[2018-08-08 21:39:51 +0800] [27410] [INFO] Worker exiting (pid: 27410)
+[2018-08-08 21:39:51 +0800] [27405] [INFO] Shutting down: Master
+[2018-08-08 21:47:09 +0800] [27758] [DEBUG] Current configuration:
+  config: /www/wwwroot/flask/gunicorn.py
+  bind: ['127.0.0.1:5000']
+  backlog: 2048
+  workers: 3
+  worker_class: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+  threads: 2
+  worker_connections: 1000
+  max_requests: 10000
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 5
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /www/wwwroot/flask
+  daemon: False
+  raw_env: []
+  pidfile: /www/wwwroot/flask/logs/gunicorn.pid
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: ./logs/acess.log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(t)s %(U)s %(q)s
+  errorlog: ./logs/error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: manage:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f15c970f1e0>
+  on_reload: <function OnReload.on_reload at 0x7f15c970f2f0>
+  when_ready: <function WhenReady.when_ready at 0x7f15c970f400>
+  pre_fork: <function Prefork.pre_fork at 0x7f15c970f510>
+  post_fork: <function Postfork.post_fork at 0x7f15c970f620>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f15c970f730>
+  worker_int: <function WorkerInt.worker_int at 0x7f15c970f840>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f15c970f950>
+  pre_exec: <function PreExec.pre_exec at 0x7f15c970fa60>
+  pre_request: <function PreRequest.pre_request at 0x7f15c970fb70>
+  post_request: <function PostRequest.post_request at 0x7f15c970fbf8>
+  child_exit: <function ChildExit.child_exit at 0x7f15c970fd08>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f15c970fe18>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f15c970ff28>
+  on_exit: <function OnExit.on_exit at 0x7f15c97230d0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2018-08-08 21:47:09 +0800] [27758] [INFO] Starting gunicorn 19.9.0
+[2018-08-08 21:47:09 +0800] [27758] [DEBUG] Arbiter booted
+[2018-08-08 21:47:09 +0800] [27758] [INFO] Listening at: http://127.0.0.1:5000 (27758)
+[2018-08-08 21:47:09 +0800] [27758] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2018-08-08 21:47:09 +0800] [27761] [INFO] Booting worker with pid: 27761
+[2018-08-08 21:47:09 +0800] [27762] [INFO] Booting worker with pid: 27762
+[2018-08-08 21:47:09 +0800] [27758] [DEBUG] 3 workers
+[2018-08-08 21:47:09 +0800] [27763] [INFO] Booting worker with pid: 27763
+[2018-08-08 21:50:34 +0800] [27758] [INFO] Handling signal: term
+[2018-08-08 21:50:34 +0800] [27763] [INFO] Worker exiting (pid: 27763)
+[2018-08-08 21:50:35 +0800] [27761] [INFO] Worker exiting (pid: 27761)
+[2018-08-08 21:50:35 +0800] [27762] [INFO] Worker exiting (pid: 27762)
+[2018-08-08 21:50:35 +0800] [27758] [INFO] Shutting down: Master
+[2018-08-08 22:07:16 +0800] [28724] [INFO] Starting gunicorn 19.9.0
+[2018-08-08 22:07:16 +0800] [28724] [INFO] Listening at: http://127.0.0.1:5000 (28724)
+[2018-08-08 22:07:16 +0800] [28724] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2018-08-08 22:07:16 +0800] [28728] [INFO] Booting worker with pid: 28728
+[2018-08-08 22:07:16 +0800] [28729] [INFO] Booting worker with pid: 28729
+[2018-08-08 22:07:16 +0800] [28730] [INFO] Booting worker with pid: 28730
+[2018-08-08 22:09:32 +0800] [28724] [INFO] Handling signal: term
+[2018-08-08 22:09:32 +0800] [28729] [INFO] Worker exiting (pid: 28729)
+[2018-08-08 22:09:33 +0800] [28728] [INFO] Worker exiting (pid: 28728)
+[2018-08-08 22:09:33 +0800] [28730] [INFO] Worker exiting (pid: 28730)
+[2018-08-08 22:09:33 +0800] [28724] [INFO] Shutting down: Master
+[2018-08-08 22:09:33 +0800] [28847] [INFO] Starting gunicorn 19.9.0
+[2018-08-08 22:09:33 +0800] [28847] [INFO] Listening at: http://127.0.0.1:5000 (28847)
+[2018-08-08 22:09:33 +0800] [28847] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2018-08-08 22:09:33 +0800] [28850] [INFO] Booting worker with pid: 28850
+[2018-08-08 22:09:33 +0800] [28851] [INFO] Booting worker with pid: 28851
+[2018-08-08 22:09:33 +0800] [28852] [INFO] Booting worker with pid: 28852
+[2018-08-08 22:12:51 +0800] [28847] [INFO] Handling signal: term
+[2018-08-08 22:12:52 +0800] [28850] [INFO] Worker exiting (pid: 28850)
+[2018-08-08 22:12:52 +0800] [28851] [INFO] Worker exiting (pid: 28851)
+[2018-08-08 22:12:52 +0800] [28852] [INFO] Worker exiting (pid: 28852)
+[2018-08-08 22:12:52 +0800] [28847] [INFO] Shutting down: Master
+[2018-08-08 22:12:54 +0800] [29003] [INFO] Starting gunicorn 19.9.0
+[2018-08-08 22:12:54 +0800] [29003] [INFO] Listening at: http://127.0.0.1:5000 (29003)
+[2018-08-08 22:12:54 +0800] [29003] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2018-08-08 22:12:54 +0800] [29006] [INFO] Booting worker with pid: 29006
+[2018-08-08 22:12:54 +0800] [29007] [INFO] Booting worker with pid: 29007
+[2018-08-08 22:12:54 +0800] [29008] [INFO] Booting worker with pid: 29008
+[2018-08-08 22:16:53 +0800] [29003] [INFO] Handling signal: term
+[2018-08-08 22:16:54 +0800] [29006] [INFO] Worker exiting (pid: 29006)
+[2018-08-08 22:16:54 +0800] [29007] [INFO] Worker exiting (pid: 29007)
+[2018-08-08 22:16:54 +0800] [29008] [INFO] Worker exiting (pid: 29008)
+[2018-08-08 22:16:54 +0800] [29003] [INFO] Shutting down: Master
+[2018-08-08 22:28:43 +0800] [29833] [INFO] Starting gunicorn 19.9.0
+[2018-08-08 22:28:43 +0800] [29833] [INFO] Listening at: http://127.0.0.1:5000 (29833)
+[2018-08-08 22:28:43 +0800] [29833] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2018-08-08 22:28:43 +0800] [29836] [INFO] Booting worker with pid: 29836
+[2018-08-08 22:28:43 +0800] [29837] [INFO] Booting worker with pid: 29837
+[2018-08-08 22:28:43 +0800] [29838] [INFO] Booting worker with pid: 29838
+[2018-08-08 22:30:38 +0800] [29833] [INFO] Handling signal: term
+[2018-08-08 22:30:38 +0800] [29836] [INFO] Worker exiting (pid: 29836)
+[2018-08-08 22:30:38 +0800] [29837] [INFO] Worker exiting (pid: 29837)
+[2018-08-08 22:30:38 +0800] [29838] [INFO] Worker exiting (pid: 29838)
+[2018-08-08 22:30:39 +0800] [29833] [INFO] Shutting down: Master
+[2018-08-08 22:37:35 +0800] [30272] [INFO] Starting gunicorn 19.9.0
+[2018-08-08 22:37:35 +0800] [30272] [INFO] Listening at: http://127.0.0.1:5000 (30272)
+[2018-08-08 22:37:35 +0800] [30272] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2018-08-08 22:37:35 +0800] [30275] [INFO] Booting worker with pid: 30275
+[2018-08-08 22:37:35 +0800] [30276] [INFO] Booting worker with pid: 30276
+[2018-08-08 22:37:35 +0800] [30277] [INFO] Booting worker with pid: 30277
+[2018-08-08 22:42:38 +0800] [30272] [INFO] Handling signal: term
+[2018-08-08 22:42:39 +0800] [30277] [INFO] Worker exiting (pid: 30277)
+[2018-08-08 22:42:39 +0800] [30275] [INFO] Worker exiting (pid: 30275)
+[2018-08-08 22:42:39 +0800] [30276] [INFO] Worker exiting (pid: 30276)
+[2018-08-08 22:42:39 +0800] [30272] [INFO] Shutting down: Master
+[2018-08-08 22:46:11 +0800] [30677] [INFO] Starting gunicorn 19.9.0
+[2018-08-08 22:46:11 +0800] [30677] [INFO] Listening at: http://127.0.0.1:5000 (30677)
+[2018-08-08 22:46:11 +0800] [30677] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2018-08-08 22:46:11 +0800] [30680] [INFO] Booting worker with pid: 30680
+[2018-08-08 22:46:11 +0800] [30681] [INFO] Booting worker with pid: 30681
+[2018-08-08 22:46:11 +0800] [30682] [INFO] Booting worker with pid: 30682
+[2018-08-08 22:48:50 +0800] [30677] [INFO] Handling signal: term
+[2018-08-08 22:48:51 +0800] [30681] [INFO] Worker exiting (pid: 30681)
+[2018-08-08 22:48:51 +0800] [30682] [INFO] Worker exiting (pid: 30682)
+[2018-08-08 22:48:54 +0800] [30680] [INFO] Worker exiting (pid: 30680)
+[2018-08-08 22:48:55 +0800] [30677] [INFO] Shutting down: Master
+[2018-08-08 22:48:57 +0800] [30806] [INFO] Starting gunicorn 19.9.0
+[2018-08-08 22:48:57 +0800] [30806] [INFO] Listening at: http://127.0.0.1:5000 (30806)
+[2018-08-08 22:48:57 +0800] [30806] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2018-08-08 22:48:57 +0800] [30809] [INFO] Booting worker with pid: 30809
+[2018-08-12 19:28:04 +0800] [30806] [INFO] Handling signal: term
+[2018-08-12 19:28:05 +0800] [30809] [INFO] Worker exiting (pid: 30809)
+[2018-08-12 19:28:05 +0800] [30806] [INFO] Shutting down: Master
+[2018-08-12 19:29:57 +0800] [26747] [INFO] Starting gunicorn 19.9.0
+[2018-08-12 19:29:57 +0800] [26747] [INFO] Listening at: http://127.0.0.1:5000 (26747)
+[2018-08-12 19:29:57 +0800] [26747] [INFO] Using worker: geventwebsocket.gunicorn.workers.GeventWebSocketWorker
+[2018-08-12 19:29:57 +0800] [26751] [INFO] Booting worker with pid: 26751
